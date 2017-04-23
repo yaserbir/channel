@@ -16,8 +16,8 @@ function run(msg)
 	.."     `/sendtoall {message}`\n\n"
 	.."   *All users list:*\n"
 	.."     /users"
-	about_txt = "*Csgroup Robot* v"..bot_version.."\n\n   _- Send Message by SMS_\n   _- Add, Edit & Remove Caption_\n   _- Send Inline Keyboard_\n   _- Remove Forward Info_\n   _- Send Bold,Italic and Cod Text_\n   _- Send Hyper Link_\n   _- Timer for Post to Next Time_\n   _- & More..._\n\n`Made in Csgroup Team and Powered by csgroup Co. Group`"
-	about_key = {{{text = "کانال رسمی" , url = "https://telegram.me/Csgroup"}},{{text = "ربات تیم" , url = "https://telegram.me/CsgroupBot"}},{{text = "پیام رسان" , url = "https://telegram.me/PvResanCsgroupBot"}}}
+	about_txt = "*qashqai1 Robot* v"..bot_version.."\n\n   _- Send Message by SMS_\n   _- Add, Edit & Remove Caption_\n   _- Send Inline Keyboard_\n   _- Remove Forward Info_\n   _- Send Bold,Italic and Cod Text_\n   _- Send Hyper Link_\n   _- Timer for Post to Next Time_\n   _- & More..._\n\n`Made in Csgroup Team and Powered by qashqai1 Co. Group`"
+	about_key = {{{text = "کانال رسمی" , url = "https://telegram.me/qashqai1"}},{{text = "ربات تورک قشقایی" , url = "https://telegram.me/qashqai1_bot"}},{{text = "پیام رسان" , url = "https://telegram.me/qashqai1_bot"}}}
 	start_txt = "به ربات "..bot.first_name..' خوش آمدید\nاین ربات در حالت اینلاین رایگان است و برای آموزش بیشتر به بخش "راهنمای استفاده رایگان" مراجعه کنید.\n`استفاده ی وی آی پی از این ربات رایگان نبوده و جهت تهیه ی اکانت از طریق پل های ارتباطی موجود در بخش "ارتباط با ما" اقدام نمایید و با ما تماس بگیرید. هزینه ی استفاده از این ربات ماهانه 5.000 تومان میباشد.\nاز جمله قابلیات این ربات میتوان به موارد زیر اشاره کرد:\n-ارسال متن به کانال از طریق پیامک (اس ام اس)\n-ارسال کیبرد شیشه ای به کانال\n-افزودن، ویرایش و حذف درج نویس در فورواردها\n-حذف منبع فورواردها\n-ارسال زماندار پست\n-ارسال متون با استایل و فونت های مختلف\n-افزودن لینک به یک کلمه\n-و...`'
 	start_key = {{"راهنمای ربات","راهنمای استفاده رایگان"},{"مثال کیبرد اینلاین و مارک داون"},{"ربات پیام رسان","ارتباط با ما"}}
 	keyboard = {{"ارسال کیبرد شیشه ای به کانال"},{"فوروارد به کانال بدون منبع"},{"ارسال هر نوع فایل با زیر نویس"},{"ارسال پست با فونت های مختلف"},{"ارسال پست با SMS","ارسال پست زماندار"},{"ثبت امضا","حذف امضا","نمایش امضا"},{"راهنما","درباره ما","اطلاعات کانال"}}
@@ -74,14 +74,14 @@ function run(msg)
 			return send_key(msg.from.id, start_txt, start_key)
 		end
 	elseif msg.text == "ربات پیام رسان" then
-		return send_msg(msg.from.id, "`اگر ریپورت هستید از طریق این ربات میتوانید با ما ارتباط برقرار کنید.`\n@PvResanCsgroupBot", true)
+		return send_msg(msg.from.id, "`اگر ریپورت هستید از طریق این ربات میتوانید با ما ارتباط برقرار کنید.`\n@qashqai1_bot", true)
 	elseif msg.text == "راهنمای استفاده رایگان" then
-		return send_msg(msg.from.id, "قابلیت اینلاین ربات سی اس گروپ به صورت رایگان:\n`با استفاده از قابلیت اینلاین میتوانید به رایگان کلید شیشه ای به کانال خود اضافه کنید. دقت کنید که در حالت رایگان برای هر پست قادر به افزودن فقط یک کلید هستید. برای استفاده، یوزر ربات یعنی @CsgroupBot را تایپ کنید و یک فاصله بزنید، متن مورد نظر را وارد نمایید که تیتر شما و متن اصلی شما میباشد و دقت کنید که در آن قابلت مارک داون هم فعال است، پی از تایپ متن مورد نظر، علامت # را بگذارید و متن کلید را وارد کنید، سپس علامت = را وارد کرده و بعد لینک را وارد نمایید، دقت کنید که لینک با http:// یا https:// شروع شود. پس از انجام این مراحل علامت > را بگذارید و منتظر باشید تا کلید ارسال به چت نمایش داده شود، با انتخاب آن کیبرد شما به چت اضاف خواهد شد.`", true)
+		return send_msg(msg.from.id, "قابلیت اینلاین ربات تورک قشقایی به صورت رایگان:\n`با استفاده از قابلیت اینلاین میتوانید به رایگان کلید شیشه ای به کانال خود اضافه کنید. دقت کنید که در حالت رایگان برای هر پست قادر به افزودن فقط یک کلید هستید. برای استفاده، یوزر ربات یعنی @qashqai1 را تایپ کنید و یک فاصله بزنید، متن مورد نظر را وارد نمایید که تیتر شما و متن اصلی شما میباشد و دقت کنید که در آن قابلت مارک داون هم فعال است، پی از تایپ متن مورد نظر، علامت # را بگذارید و متن کلید را وارد کنید، سپس علامت = را وارد کرده و بعد لینک را وارد نمایید، دقت کنید که لینک با http:// یا https:// شروع شود. پس از انجام این مراحل علامت > را بگذارید و منتظر باشید تا کلید ارسال به چت نمایش داده شود، با انتخاب آن کیبرد شما به چت اضاف خواهد شد.`", true)
 	elseif msg.text == "ارتباط با ما" or msg.text == "درباره ما" then
 		return send_inline(msg.from.id, about_txt, about_key)
 	elseif msg.text == "مثال کیبرد اینلاین و مارک داون" then
-		inlinekey = {{{text = "کانال تیم" , url = "https://telegram.me/Csgroup"}},{{text = "ربات تیم" , url = "https://telegram.me/CsgroupBot"}}}
-		text = "مثال استایل نویس با فونتهای مختلف:\n*Csgroup Team*\nCsgroup Team\n_Csgroup Team_\n`Csgroup Team`\nتیم سی اس گروپ\n`تیم سی اس گروپ`\nمثال هایپر لینک:\n[تیم سی اس گروپ](telegram.me/Csgroup)\n[Csgroup Team](telegram.me/Csgroup)\nمثال کیبرد اینلاین:"
+		inlinekey = {{{text = "کانال تیم" , url = "https://telegram.me/qashqai1"}},{{text = "ربات تورک قشقایی" , url = "https://telegram.me/qashqai1"}}}
+		text = "مثال استایل نویس با فونتهای مختلف:\n*Csgroup Team*\nqashqai1 Team\n_Csgroup Team_\n`Csgroup Team`\nتورک قشقایی کانالی\nتورک قشقایی کانالی`\nمثال هایپر لینک:\n[تورک قشقایی کانالی](telegram.me/qashqai1)\n[qashqai1 Team](telegram.me/qashqai1)\nمثال کیبرد اینلاین:"
 		return send_inline(msg.from.id, text, inlinekey)
 	elseif msg.text == "راهنما" or msg.text == "/help" or msg.text == "راهنمای ربات" then
 		if msg.from.id == sudo_id then
@@ -127,7 +127,7 @@ function run(msg)
 				return send_msg(sudo_id, "`کاربر مورد نظر با شناسه "..tostring(target[1]).." افزوده شد`", true)
 			end
 		else
-			return send_msg(sudo_id, "*/add 12345678,@Csgroup,9121234567*\n`/add [telegram id],[@channel],[number]`", true)
+			return send_msg(sudo_id, "*/add 12345678,@qashqai1,9121234567*\n`/add [telegram id],[@channel],[number]`", true)
 		end
 	elseif msg.text:find('/edit') and msg.from.id == sudo_id then
 		local usertarget = msg.text:input()
@@ -152,7 +152,7 @@ function run(msg)
 				return send_msg(sudo_id, "`کاربر مورد نظر فاقد حساب کاربری میباشد`", true)
 			end
 		else
-			return send_msg(sudo_id, "*/edit 12345678,@Csgroup,9121234567*\n`/edit [telegram id],[@channel],[number]`", true)
+			return send_msg(sudo_id, "*/edit 12345678,@qashqai1,9121234567*\n`/edit [telegram id],[@channel],[number]`", true)
 		end
 	elseif msg.text:find('/sendtoall') and msg.from.id == sudo_id then
 		local usertarget = msg.text:input()
@@ -305,7 +305,7 @@ function run(msg)
 		save_data("users.json", users)
 		return send_key(msg.from.id, "`برای استفاده از این سرویس، پیام خود را به شماره ی زیر پیامک (SMS) کنید و حداکثر پیامتان تا 30ثانیه بعد در کانالتان پست میشود. دقت کنید از طریق این روش قادر به استفاده از قابلیت مارک داون هم هستید. فقط میتوانید با شماره ای پیامک دهید که هنگام ثبت نام ارائه نمودید.`\n(+98)0000 00 11 00 11 00", keyboard)
 	elseif msg.text == "مثال کیبرد اینلاین" then
-		return send_inline(msg.from.id, "`تیتر کیبرد اینلاین با قابلیت استفاده از قابلیت مارک داون`", {{{text = "کانال تیم" , url = "https://telegram.me/Csgroup"}}})
+		return send_inline(msg.from.id, "`تیتر کیبرد اینلاین با قابلیت استفاده از قابلیت مارک داون`", {{{text = "کانال تیم" , url = "https://telegram.me/qashqai1"}}})
 	end
 	
 	if users[userid].action == 0 then
@@ -421,7 +421,7 @@ function run(msg)
 		users[userid].action = 42
 		users[userid].tabtxt = msg.text
 		save_data("users.json", users)
-		return send_msg(msg.from.id, "`لینکی که میخواهید این کلید نماینده ی آن باشد را وارد کنید\nمثال: https://telegram.me/Csgroup`", true)
+		return send_msg(msg.from.id, "`لینکی که میخواهید این کلید نماینده ی آن باشد را وارد کنید\nمثال: https://telegram.me/qashqai1`", true)
 	elseif users[userid].action == 42 then
 		table.insert(users[userid].tables, {{text=users[userid].tabtxt,url=msg.text}})
 		if users[userid].tab == 1 then
@@ -583,7 +583,7 @@ end
 function inline(msg)
 	tab1 = '{"type":"article","parse_mode":"Markdown","disable_web_page_preview":true,"id":'
 	thumb = "http://umbrella.shayan-soft.ir/inline_icons/"
-	ercomp = "مراحل ساخت کیبرد اینلاین به اتمام نرسیده است، لطفا طبق الگو عمل کنید، برای آموزش بیشتر راهنما را از داخل ربات مشاهده فرمایید.\n@CsgroupBot"
+	ercomp = "مراحل ساخت کیبرد اینلاین به اتمام نرسیده است، لطفا طبق الگو عمل کنید، برای آموزش بیشتر راهنما را از داخل ربات مشاهده فرمایید.\n@qashqai1_bot"
 	if msg.query == "" or msg.query == nil then
 		tab_inline = tab1..'"1","title":"متن تیتر","description":"تیتر اصلی کیبرد را وارد کنید بعد علامت # بگذارید","message_text":"'..ercomp..'","thumb_url":"'..thumb..'keyk_t.png"}'
 	else
