@@ -81,7 +81,7 @@ function run(msg)
 		return send_inline(msg.from.id, about_txt, about_key)
 	elseif msg.text == "مثال کیبرد اینلاین و مارک داون" then
 		inlinekey = {{{text = "کانال تیم" , url = "https://telegram.me/qashqai1"}},{{text = "ربات تورک قشقایی" , url = "https://telegram.me/qashqai1"}}}
-		text = "مثال استایل نویس با فونتهای مختلف:\n*Csgroup Team*\nqashqai1 Team\n_Csgroup Team_\n`Csgroup Team`\nتورک قشقایی کانالی\nتورک قشقایی کانالی`\nمثال هایپر لینک:\n[تورک قشقایی کانالی](telegram.me/qashqai1)\n[qashqai1 Team](telegram.me/qashqai1)\nمثال کیبرد اینلاین:"
+		text = "مثال استایل نویس با فونتهای مختلف:\n*qashqai1 Team*\nqashqai1 Team\n_qashqai1 Team_\n`qashqai1 Team`\nتورک قشقایی کانالی\nتورک قشقایی کانالی`\nمثال هایپر لینک:\n[تورک قشقایی کانالی](telegram.me/qashqai1)\n[qashqai1 Team](telegram.me/qashqai1)\nمثال کیبرد اینلاین:"
 		return send_inline(msg.from.id, text, inlinekey)
 	elseif msg.text == "راهنما" or msg.text == "/help" or msg.text == "راهنمای ربات" then
 		if msg.from.id == sudo_id then
